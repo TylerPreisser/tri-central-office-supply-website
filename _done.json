@@ -1,13 +1,13 @@
 {
-  "completed_at": "2026-05-27T21:13:23Z",
+  "completed_at": "2026-05-27T23:24:52Z",
   "files_created": [
-    "build/SITE_PLAN.md",
     "build/index.html",
-    "build/styles/main.css",
-    "build/scripts/main.js",
-    "build/assets/",
-    "build/verification.json"
+    "build/styles/site.css",
+    "build/scripts/site.js",
+    "build/assets/tri-central-wordmark.jpg",
+    "build/verification.json",
+    "build/_done.json"
   ],
   "status": "success",
-  "notes": "Orchestrator verified static build artifacts after worker omitted _done.json."
+  "notes": "Revision 8 passed visual QA after mobile overflow and board-row fixes."
 }

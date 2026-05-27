@@ -1,9 +1,18 @@
 {
-  "checked_at": "2026-05-27T21:13:23Z",
+  "checked_at": "2026-05-27T23:24:52Z",
   "status": "success",
-  "missing_refs": [],
-  "hero_referenced": true,
-  "preisser_branding": true,
-  "reveal_system": true,
-  "issues": []
+  "checks": {
+    "index_exists": true,
+    "site_css_exists": true,
+    "site_js_exists": true,
+    "wordmark_asset_exists": true,
+    "wordmark_referenced": true,
+    "preisser_branding": true,
+    "phone_present": true,
+    "mobile_media_present": true,
+    "screenshots_passed_visual_qa": true,
+    "revision8_mobile_390": "qa/screenshots/revision8-mobile-390.png",
+    "revision8_mobile_360": "qa/screenshots/revision8-mobile-360.png",
+    "revision8_desktop": "qa/screenshots/revision8-desktop.png"
+  }
 }

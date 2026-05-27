@@ -2,3 +2,4 @@
 {"at":"2026-05-27T16:11:00-05:00","step":"assets","detail":"Created build folders and copied required captured image and brand assets into build/assets.","pct":24}
 {"at":"2026-05-27T16:14:30-05:00","step":"build","detail":"Wrote index.html, CSS, and JavaScript for the static Tri-Central homepage.","pct":72}
 {"at":"2026-05-27T16:23:47-05:00","step":"fix","detail":"Applied mobile overflow, sticky action spacing, and reveal fallback fixes in build CSS/JS.","pct":86}
+{"at":"2026-05-27T23:07:01Z","step":"brand-and-asset-review","detail":"Confirmed canonical Tri-Central wordmark and rejection constraints before rebuild.","pct":8}

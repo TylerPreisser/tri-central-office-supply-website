@@ -1,40 +1,45 @@
-# Tri-Central Office Supply Site Plan
+# Tri-Central Rebuild Site Plan
 
-## 1. Brand read
+## Brand Sanity Check
 
-Tri-Central should feel practical, local, capable, direct, and service-minded.
+1. Verified logo/brand source: `capture/assets/7f697d46f84d5eb5.jpg`. The brand asset manifest identifies it with high confidence as the actual Tri-Central wordmark: black TRI-CENTRAL text and geometric mark on white. It is the only captured image classified as the business logo rather than a vendor badge.
 
-The site must never feel like a generic ecommerce template, a furniture-only lifestyle page, a national retailer clone, a brittle legacy catalog, or an AI-looking card grid with vague copy.
+2. Images that must not define the brand: Lorell, Brother, HP, Fellowes, Genuine Joe, P&G, Business Source, Expo, and product-promo images in `capture/assets/` and `capture/brand/`. These are category/vendor proof only. They cannot drive logo, palette, typography, or layout identity.
 
-## 2. Inspiration DNA
+3. Brand system created here: monochrome Tri-Central foundation, warm paper surfaces, black procurement-board typography, blue digital actions, and controlled red urgent actions. This fits a local office-supply and service business because buyers need fast task routing, proof of local availability, and a human service counter when the catalog is not enough.
 
-- Layout patterns to adapt: a Staples-like procurement header with search and repeat-order tools, Ricoh/Xerox-style service clarity, Haworth confidence for furniture/equipment sections, Branch restraint for motion, and Muuto warmth for material/image fields.
-- Typography behavior: scan-first grotesk hierarchy with dense labels, compact utility text, and large but controlled section statements.
-- Motion behavior: one IntersectionObserver reveal system, short hover/focus transitions, and no scroll theatrics.
-- Image treatment: captured images stay framed and modest because most are low resolution; warm panels and precise borders make them useful without pretending they are large editorial photography.
-- Color/material cues: paper-white working surface, light gray command modules, navy trust anchor, blue digital actions, red high-intent CTAs, warm neutral for furniture/workplace context.
-- Signature interaction motif: a "command center" task band with quick order, toner, service, quote, and local-contact routes always near the buying path.
+4. Mobile first-screen quality: the 360px/390px layout starts with the verified logo, phone/hours/delivery facts, a strong headline, compact command buttons for Order, Toner, Service, and Call, plus a composed supply-desk module. It is not a shrunken desktop grid; it is a purpose-built mobile procurement board.
 
-## 3. Visual system
+## Brand Read
 
-- Type scale: Inter/Roboto/system sans; 13px uppercase eyebrows, 38-64px hero H1, 30-46px section H2, 19-22px card headings, 16-18px body, 13-15px utility text, 14px button labels.
-- Spacing: 1180px max width; 12-column desktop grid; 48-64px utility rhythm; 80-112px service/editorial rhythm on desktop and 48-64px on mobile.
-- Color tokens: exact palette from the creative brief in CSS custom properties.
-- Composition: utility header, hero command grid, asymmetric category grid, task band, local service strip, furniture/machines split, proof/help section, footer.
-- Components: top utility bar, main nav/search, command cards, category tiles, quick task modules, service facts, framed images, sticky mobile action bar.
-- Motion: `.reveal` elements transition opacity and `translateY(18px)` over 420ms with 60ms max stagger; reduced-motion disables transforms.
+Adjectives: local, practical, prepared, responsive, no-nonsense.
 
-## 4. Asset strategy
+Must never feel like: a vendor ad collage, national retailer clone, generic card template, luxury furniture brochure, or amateur static HTML.
 
-- Hero/support: `hero-workstation.jpg` is copied from the required `capture/assets/2e3a9b746764c465.jpg` and used in a framed desktop panel, never full-bleed.
-- Furniture/service: captured furniture and workplace images are used as small cards or framed panels only.
-- Toner/machine credibility: the HP toner image is used in the ink/toner and machine support areas.
-- Brand: captured Tri-Central logo images are used in header/footer.
-- Low-quality mitigation: images use fixed frames, light backgrounds, borders, and object-fit containment where needed.
+## Inspiration DNA
 
-## 5. Build strategy
+- Staples Business Advantage: direct buyer tasks, dense utility, clear repeated-action patterns.
+- Ricoh/Xerox: service credibility, machine support language, restrained proof blocks.
+- Haworth/Branch: confident typography, measured white space, calm modern surfaces.
+- Muuto: tactile warmth used sparingly through warm paper panels, not lifestyle excess.
 
-- Framework: static HTML/CSS/vanilla JavaScript in `build/` for direct file hosting.
-- Dependencies: none.
-- Performance risks: small image set copied locally; no remote fonts or libraries.
-- Accessibility risks: ensure semantic regions, visible focus states, real buttons/links, labels for quick-order/search controls, reduced-motion support, and 44px mobile action targets.
+Signature motif: a "local supply desk" procurement board. Task strips, ledger rows, routing tags, and compact local-service blocks make the homepage feel like an operations surface.
+
+## Visual System
+
+- Type: Inter/Arial system stack; bold grotesk headlines; tight utility labels.
+- Palette: black, white, paper, panel gray, rule gray, muted gray, digital blue, urgent red, navy, warm neutral, steel.
+- Composition: mobile-first vertical board; desktop 12-column utility layout with asymmetric cards and service bands.
+- Components: utility bar, mobile action rail, command hero, task buttons, category ledger rows, quick-order modules, service proof strip, furniture/machines split, help CTA, footer.
+- Motion: one IntersectionObserver reveal system with 420ms reveals, 60ms stagger, reduced-motion support.
+
+## Asset Strategy
+
+- `build/assets/tri-central-wordmark.jpg`: logo only.
+- `build/assets/hero-workstation.jpg`: required workstation image, framed small to mitigate low resolution.
+- `build/assets/furniture-desk-red.jpg` and `build/assets/furniture-station-gray.jpg`: small furniture/service proof images.
+- `build/assets/hp-supplies-partner.jpg`: small toner credibility cue only, never brand identity.
+
+## Build Strategy
+
+This is a complete static site in `build/` with semantic HTML, one CSS file, and one JS file. All links are real anchors or `tel:` links. There are no placeholder images or fake testimonials. Verification will check required files, required image references, basic HTML structure, and no obvious horizontal-overflow CSS patterns.
